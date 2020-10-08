@@ -1,6 +1,7 @@
-ln -sf $PWD/vimrc  $HOME/.vimrc
-  6 ls -l $HOME/.vimrc
 #!/bin/bash
+
+ln -sf $PWD/vimrc  $HOME/.vimrc
+ls -l $HOME/.vimrc
 
 ln -sf $PWD/bash.config  $HOME/.bash_aliases
 ls -l $HOME/.bash_aliases
