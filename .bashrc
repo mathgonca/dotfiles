@@ -11,7 +11,7 @@ alias cp='cp -Rv'
 alias ls='ls --color=auto -ACF'
 alias ll='ls --color=auto -alF'
 alias la='ls -A'
-alias c='clean'
+alias c='clear'
 alias grep='grep --color=auto'
 alias grepw='grep --color=auto -Hrnwi'
 alias mkdir='mkdir -pv'
@@ -31,7 +31,7 @@ alias gcom='git commit'
 alias gsup='git status'
 alias goto='git checkout'
 alias branches='git branch -v'
-#alias firewood='for remote in `git branch -r`; do git branch --track ${remote#origin/} $remote; done'
+alias firewood='for remote in `git branch -r`; do git branch --track ${remote#origin/} $remote; done'
 alias remotes='git remote -v'
 
 alias pip='pip3'
@@ -43,22 +43,17 @@ alias stopenv='deactivate'
 # Use programs without a root-equivalent group
 alias docker='sudo docker'
 alias docker-compose='sudo docker-compose'
-#alias prtn='sudo protonvpn'
 
 # Show contents of dir after action
-function cd () {
-    builtin cd "$1"
-    ls -ACF
-}
+#function cd () {
+#    builtin cd "$1"
+#    ls -ACF
+#}
 
 # Markdown link check in a folder, recursive
 function mlc () {
     find $1 -name \*.md -exec markdown-link-check -p {} \;
 }
-
-# Go
-export PATH=$PATH:/usr/local/bin:/usr/local/go/bin:~/.local/bin:$GOPATH/bin
-export GOPATH=~/go
 
 # Vim for life
 export EDITOR=/usr/bin/vim
@@ -108,16 +103,23 @@ txtrst='\[\e[0m\]'    # Text Reset
 atC="${txtpur}"
 nameC="${txtblu}"
 hostC="${txtpur}"
-pathC="${txtcyn}"
+pathC="${txtgrn}"
 gitC="${txtpur}"
 pointerC="${txtwht}"
 normalC="${txtrst}"
 
 # Red pointer for root
 if [ "${UID}" -eq "0" ]; then
-    pointerC="${txtred}"
+pointerC="${txtred}"
 fi
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+gitBranch() {
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+}
+
+#Victoria's
+#export PS1="${pathC}\w ${gitC}\$(gitBranch) ${pointerC}\$${normalC} "
+#Default
+#export PS1="\u@\h:\w\\$\[$(tput sgr0)\]"
+#My own
+export PS1="${pathC}\u${gitC}@${pathC}\h:${nameC}\w${gitC}\$(gitBranch)${pointerC}\$${normalC} "
