@@ -3,9 +3,9 @@
 # Up from scripts dir
 cd ..
 
-ln -sf .bashrc $HOME/.bashrc
+ln -sf $PWD/.bashrc $HOME/.bashrc
+ln -sf $PWD/.vimrc $HOME/.vimrc
+ln -sf $PWD/.tmux.conf $HOME/.tmux.conf
 cp .git-completion.bash ${HOME}
 cp .gitmessage ${HOME}
 cp .bash_profile ${HOME}
-ln -sf .vimrc $HOME/.vimrc
-ln -sf .tmux.conf $HOME/.tmux.conf
