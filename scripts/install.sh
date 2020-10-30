@@ -33,6 +33,8 @@ install tree
 install vim
 install wget
 install xclip
+install gnome-tweak-tool
+install make
 
 # Image processing
 install gimp
