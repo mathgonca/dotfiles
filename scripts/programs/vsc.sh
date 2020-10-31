@@ -13,6 +13,18 @@ function install {
   name="${1}"
   code --install-extension ${name} --force
 }
+
+install HookyQR.beautify
+install alefragnani.Bookmarks
+install thekalinga.bootstrap4-vscode
+install ms-vscode.cpptools
+install dracula-theme.theme-dracula
+install dbaeumer.vscode-eslint
+install ritwickdey.LiveServer
+install DavidAnson.vscode-markdownlint
+install PKief.material-icon-theme
+install hoovercj.vscode-power-mode
+
 # install batisteo.vscode-django
 # install bibhasdn.django-html
 # install bierner.markdown-preview-github-styles
@@ -20,21 +32,19 @@ function install {
 # install chenxsan.vscode-standardjs
 # install christian-kohler.npm-intellisense
 # install cliffordfajardo.highlight-line-vscode
-# install coenraads.bracket-pair-colorizer
-# install davidanson.vscode-markdownlint
+install coenraads.bracket-pair-colorizer
 # install eg2.vscode-npm-script
 # install emmanuelbeziat.vscode-great-icons
 # install foxundermoon.shell-format
 # install github.vscode-pull-request-github
 # install glen-84.sass-lint
 # install golang.go
-# install hookyqr.beautify
 # install joaompinto.vscode-graphviz
 # install killalau.vscode-liquid-snippets
 # install liviuschera.noctis
-# install ms-azuretools.vscode-docker
-# install ms-python.python
-# install ms-vscode-remote.remote-containers
+install ms-azuretools.vscode-docker
+install ms-python.python
+install ms-vscode-remote.remote-containers
 # install neilding.language-liquid
 # install redhat.vscode-yaml
 # install rido3.wordcount

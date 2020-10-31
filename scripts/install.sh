@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# Make my main folders
+mkdir ~/repos/
+mkdir ~/repos/github/
+mkdir ~/repos/gitlab/
+
 # Copy dotfiles
 ./copy.sh
 
@@ -35,6 +40,8 @@ install wget
 install xclip
 install gnome-tweak-tool
 install make
+install build-essential
+
 
 # Image processing
 install gimp
