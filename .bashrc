@@ -8,7 +8,7 @@ shopt -s histappend
 
 # Aliases
 alias cp='cp -Rv'
-alias ls='ls --color=auto -ACF'
+alias ls='ls --color=auto'
 alias ll='ls --color=auto -alF'
 alias la='ls -A'
 alias c='clear'
@@ -123,3 +123,8 @@ gitBranch() {
 #export PS1="\u@\h:\w\\$\[$(tput sgr0)\]"
 #My own
 export PS1="${pathC}\u${gitC}@${pathC}\h:${nameC}\w${gitC}\$(gitBranch)${pointerC}\$${normalC} "
+
+# asdf
+. $HOME/.asdf/asdf.sh
+. $HOME/.asdf/completions/asdf.bash
+

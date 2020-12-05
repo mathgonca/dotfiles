@@ -40,8 +40,10 @@ install wget
 install xclip
 install gnome-tweak-tool
 install make
+install tmux
 install build-essential
-
+install openssh-client
+install openssh-server
 
 # Image processing
 install gimp

@@ -5,4 +5,5 @@ git clone https://github.com/daniruiz/flat-remix-gtk ~/repos/github/.flat-remix-
 
 mkdir -p ~/.icons && mkdir -p ~/.themes
 
-cp -r flat-remix/Flat-Remix* ~/.icons/ && cp -r flat-remix-gtk/Flat-Remix-GTK* ~/.themes/
+cp -r ~/repos/github/.flat-remix/Flat-Remix* ~/.icons/ && cp -r ~/repos/github/.flat-remix-gtk/Flat-Remix-GTK* ~/.themes/
+
