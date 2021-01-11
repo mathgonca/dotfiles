@@ -44,6 +44,8 @@ install tmux
 install build-essential
 install openssh-client
 install openssh-server
+install vlc
+install mupdf
 
 # Image processing
 install gimp
