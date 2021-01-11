@@ -122,7 +122,7 @@ gitBranch() {
 #Default
 #export PS1="\u@\h:\w\\$\[$(tput sgr0)\]"
 #My own
-export PS1="${pathC}\u${gitC}@${pathC}\h:${nameC}\w${gitC}\$(gitBranch)${pointerC}\$${normalC} "
+export PS1="${pathC}\u${gitC}@${pathC}\h:${nameC}\W${gitC}\$(gitBranch)${pointerC}\$${normalC} "
 
 # asdf
 . $HOME/.asdf/asdf.sh
