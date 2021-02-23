@@ -16,9 +16,9 @@ alias grep='grep --color=auto'
 alias grepw='grep --color=auto -Hrnwi'
 alias mkdir='mkdir -pv'
 alias mv='mv -v'
-alias weather='curl wttr.in/?0'
 alias wget='wget -c'
 alias tree="tree -aI 'test*|.git|node_modules|resources'"
+alias update='sudo apt update && sudo apt upgrade -y'
 
 if [ -f ~/.git-completion.bash ]; then
     . ~/.git-completion.bash
@@ -117,14 +117,5 @@ gitBranch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
 
-#Victoria's
-#export PS1="${pathC}\w ${gitC}\$(gitBranch) ${pointerC}\$${normalC} "
-#Default
-#export PS1="\u@\h:\w\\$\[$(tput sgr0)\]"
-#My own
 export PS1="${pathC}\u${gitC}@${pathC}\h:${nameC}\W${gitC}\$(gitBranch)${pointerC}\$${normalC} "
-
-# asdf
-. $HOME/.asdf/asdf.sh
-. $HOME/.asdf/completions/asdf.bash
 

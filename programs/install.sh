@@ -45,7 +45,6 @@ install build-essential
 install openssh-client
 install openssh-server
 install vlc
-install mupdf
 
 # Image processing
 install gimp
@@ -64,4 +63,4 @@ sudo apt upgrade -y
 sudo apt autoremove -y
 
 # Fun hello
-figlet "Hello!" | lolcat
+figlet "Hello Teeuso!" | lolcat
