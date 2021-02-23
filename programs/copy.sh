@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Up from scripts dir
-cd ..
-
 ln -sf $PWD/bashrc $HOME/.bashrc
 ls -l $HOME/.bashrc
 ln -sf $PWD/vimrc $HOME/.vimrc
@@ -10,7 +7,7 @@ ls -l $HOME/.vimrc
 ln -sf $PWD/tmux.conf $HOME/.tmux.conf
 ls -l $HOME/.tmux.conf
 
-cp scripts $HOME/.local/
+cp -Rv scripts $HOME/.local/
 export PATH=$PATH:$HOME/.local/scripts/
 
 cp .git-completion.bash ${HOME}

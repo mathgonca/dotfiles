@@ -1,4 +1,7 @@
 #!/bin/bash
 
-echo "🐍 Installing Python"
-sudo apt install -y python3-venv python3-pip
+echo "Installing Ghost Writer"
+sudo add-apt-repository ppa:wereturtle/staging
+sudo apt-get update
+sudo apt install ghostwriter
+

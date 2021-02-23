@@ -119,3 +119,7 @@ gitBranch() {
 
 export PS1="${pathC}\u${gitC}@${pathC}\h:${nameC}\W${gitC}\$(gitBranch)${pointerC}\$${normalC} "
 
+
+# ASDF
+. $HOME/.asdf/asdf.sh
+. $HOME/.asdf/completions/asdf.bash
