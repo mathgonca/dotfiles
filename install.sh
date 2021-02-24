@@ -9,6 +9,9 @@ mkdir ~/.local/
 # Copy dotfiles
 ./copy.sh
 
+#
+export PATH=$PATH:$HOME/.local/scripts/
+
 # Update Ubuntu and get standard repository programs
 sudo apt update && sudo apt full-upgrade -y
 
@@ -64,4 +67,4 @@ sudo apt upgrade -y
 sudo apt autoremove -y
 
 # Fun hello
-figlet "Hello Teeuso!" | lolcat
+figlet "Hello Matayoos!" | lolcat

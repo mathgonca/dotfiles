@@ -1,4 +1,5 @@
 #!/bin/bash
+cd ..
 
 ln -sf $PWD/bashrc $HOME/.bashrc
 ls -l $HOME/.bashrc
