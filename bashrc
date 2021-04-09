@@ -20,13 +20,6 @@ alias wget='wget -c'
 alias tree="tree -aI 'test*|.git|node_modules|resources'"
 alias update='sudo apt update && sudo apt upgrade -y'
 
-if [ -f ~/.git-completion.bash ]; then
-    . ~/.git-completion.bash
-
-    # Add git completion to aliases
-    __git_complete goto _git_checkout
-fi
-
 alias gcom='git commit'
 alias gsup='git status'
 alias goto='git checkout'
@@ -44,12 +37,6 @@ alias stopenv='deactivate'
 alias docker='sudo docker'
 alias docker-compose='sudo docker-compose'
 
-# Show contents of dir after action
-#function cd () {
-#    builtin cd "$1"
-#    ls -ACF
-#}
-
 # Markdown link check in a folder, recursive
 function mlc () {
     find $1 -name \*.md -exec markdown-link-check -p {} \;
@@ -57,9 +44,6 @@ function mlc () {
 
 # Vim for life
 export EDITOR=/usr/bin/vim
-
-# Bash completion
-source ~/.git-completion.bash
 
 # Color prompt
 export TERM=xterm-256color
@@ -118,9 +102,4 @@ gitBranch() {
 }
 
 export PS1="${pathC}\u${gitC}@${pathC}\h:${nameC}\W${gitC}\$(gitBranch)${pointerC}\$${normalC} "
-
-
-# ASDF
-. $HOME/.asdf/asdf.sh
-. $HOME/.asdf/completions/asdf.bash
 

@@ -2,9 +2,6 @@
 
 # Make my main folders
 mkdir ~/repos/
-mkdir ~/repos/github/
-mkdir ~/repos/gitlab/
-mkdir ~/.local/
 
 # Copy dotfiles
 ./copy.sh
