@@ -1,14 +1,5 @@
 #!/bin/bash
 
-# Make my main folders
-mkdir ~/repos/
-
-# Copy dotfiles
-./copy.sh
-
-#
-export PATH=$PATH:$HOME/.local/scripts/
-
 # Update Ubuntu and get standard repository programs
 sudo apt update && sudo apt full-upgrade -y
 
