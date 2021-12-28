@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Bluetooth dongle driver
+sudo cp bluetooth-dongle-driver/rtl8762b_config /usr/lib/firmware/rtl_bt/rtl8761b_config.bin
+sudo cp bluetooth-dongle-driver/rtl8761b_fw /usr/lib/firmware/rtl_bt/rtl8761b_fw.bin
+
 # config
 ln -sf $PWD/bashrc $HOME/.bashrc
 ls -l $HOME/.bashrc
