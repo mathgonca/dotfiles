@@ -57,5 +57,8 @@ for f in programs/*.sh; do bash "$f" -H; done
 sudo apt upgrade -y
 sudo apt autoremove -y
 
+# Set energy preferences
+gsettings set org.gnome.desktop.session idle-delay 1800
+
 # Fun hello
 figlet "Hello Matayoos!" | lolcat

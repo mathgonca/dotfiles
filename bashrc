@@ -19,6 +19,7 @@ alias mv='mv -v'
 alias wget='wget -c'
 alias tree="tree -aI 'test*|.git|node_modules|resources'"
 alias update='sudo apt update && sudo apt upgrade -y'
+alias weather='curl wttr.in/?0'
 
 alias gcom='git commit'
 alias gsup='git status'
