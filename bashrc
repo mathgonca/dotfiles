@@ -87,8 +87,8 @@ txtrst='\[\e[0m\]'    # Text Reset
 atC="${txtpur}"
 nameC="${txtblu}"
 hostC="${txtpur}"
-pathC="${txtcyn}"
-gitC="${txtpur}"
+pathC="${txtylw}"
+gitC="${txtred}"
 pointerC="${txtwht}"
 normalC="${txtrst}"
 
@@ -101,5 +101,11 @@ gitBranch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
 
-export PS1="${pathC}\u${gitC}@${pathC}\h:${nameC}\W${gitC}\$(gitBranch)${pointerC}\$${normalC} "
+export PS1="${pathC}\u${gitC}@${txtwht}\h${txtgrn}:${nameC}\W${gitC}\$(gitBranch)${pointerC}\$${normalC} "
+
+. $HOME/.asdf/asdf.sh
+. $HOME/.asdf/completions/asdf.bash
+
+# poetry
+export PATH=$PATH:$HOME/.poetry/bin
 

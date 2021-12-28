@@ -37,6 +37,9 @@ install build-essential
 install openssh-client
 install openssh-server
 install vlc
+install nvidia-driver-495
+install openjdk-8-jdk
+install openjdk-11-jdk
 
 # Image processing
 install gimp

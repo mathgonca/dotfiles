@@ -9,7 +9,7 @@ ln -sf $PWD/tmux.conf $HOME/.tmux.conf
 ls -l $HOME/.tmux.conf
 
 # scripts
-ln -sf $PWD/scripts/hnow /usr/local/bin/hnow
+sudo ln -sf $PWD/scripts/hnow /usr/local/bin/hnow
 ls -l /usr/local/bin/hnow
-ln -sf $PWD/scripts/now /usr/local/bin/now
+sudo ln -sf $PWD/scripts/now /usr/local/bin/now
 ls -l /usr/local/bin/now 

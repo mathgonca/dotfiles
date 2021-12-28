@@ -17,41 +17,17 @@ function install {
 install HookyQR.beautify
 install alefragnani.Bookmarks
 install thekalinga.bootstrap4-vscode
-install ms-vscode.cpptools
 install dracula-theme.theme-dracula
 install dbaeumer.vscode-eslint
-install ritwickdey.LiveServer
 install DavidAnson.vscode-markdownlint
 install PKief.material-icon-theme
-install hoovercj.vscode-power-mode
-
-# install batisteo.vscode-django
-# install bibhasdn.django-html
-# install bierner.markdown-preview-github-styles
-# install byi8220.indented-block-highlighting
-# install chenxsan.vscode-standardjs
-# install christian-kohler.npm-intellisense
-# install cliffordfajardo.highlight-line-vscode
-install coenraads.bracket-pair-colorizer
-# install eg2.vscode-npm-script
-# install emmanuelbeziat.vscode-great-icons
-# install foxundermoon.shell-format
-# install github.vscode-pull-request-github
-# install glen-84.sass-lint
-# install golang.go
-# install joaompinto.vscode-graphviz
-# install killalau.vscode-liquid-snippets
-# install liviuschera.noctis
-install ms-azuretools.vscode-docker
+install byi8220.indented-block-highlighting
 install ms-python.python
 install ms-vscode-remote.remote-containers
-# install neilding.language-liquid
-# install redhat.vscode-yaml
-# install rido3.wordcount
-# install simonsiefke.svg-preview
-# install streetsidesoftware.code-spell-checker
+install redhat.vscode-yaml
+install rido3.wordcount
+install streetsidesoftware.code-spell-checker
 # install victoriadrake.kabukicho
-# install vscode-icons-team.vscode-icons
-# install wayou.vscode-todo-highlight
-# install yzhang.markdown-all-in-one
-# install zxh404.vscode-proto3
+install vscode-icons-team.vscode-icons
+install wayou.vscode-todo-highlight
+install yzhang.markdown-all-in-one
