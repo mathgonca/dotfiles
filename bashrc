@@ -38,6 +38,9 @@ alias stopenv='deactivate'
 alias docker='sudo docker'
 alias docker-compose='sudo docker-compose'
 
+# Change directory short cuts
+alias notes='cd ~/repos/notes/'
+
 # Markdown link check in a folder, recursive
 function mlc () {
     find $1 -name \*.md -exec markdown-link-check -p {} \;
