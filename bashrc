@@ -39,7 +39,8 @@ alias docker='sudo docker'
 alias docker-compose='sudo docker-compose'
 
 # Change directory short cuts
-alias notes='cd ~/repos/notes/'
+alias notes='cd ~/repos/notes/ && clear'
+alias invoice-scraper='cd ~/repos/fastapi/invoice-scrapper/ && clear'
 
 # Markdown link check in a folder, recursive
 function mlc () {
