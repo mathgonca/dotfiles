@@ -26,6 +26,7 @@ install git
 install htop
 install nmap
 install openvpn
+install obs-studio
 install tree
 install vim
 install wget
