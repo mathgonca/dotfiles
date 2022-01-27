@@ -41,6 +41,7 @@ install vlc
 install nvidia-driver-495
 install openjdk-8-jdk
 install openjdk-11-jdk
+install feh
 
 # Image processing
 install gimp
