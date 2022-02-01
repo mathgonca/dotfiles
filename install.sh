@@ -22,7 +22,6 @@ install curl
 install dialog
 install exfat-utils
 install file
-install git
 install htop
 install nmap
 install openvpn
