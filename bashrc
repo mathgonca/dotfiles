@@ -114,3 +114,7 @@ export PS1="${pathC}\u${gitC}@${txtwht}\h${txtgrn}:${nameC}\W${gitC}\$(gitBranch
 # poetry
 export PATH=$PATH:$HOME/.poetry/bin
 
+# spring boot cli
+export SPRING_HOME=/opt/spring-2.6.4
+export PATH=$SPRING_HOME/bin:$PATH
+
