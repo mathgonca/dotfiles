@@ -1,0 +1,14 @@
+#!/bin/bash
+
+cadeira_name=$@ 
+
+mkdir ./$cadeira_name && cd ./$cadeira_name
+
+mkdir ./unidade-{01..04}/ ./n2
+echo "# $cadeira_name" >> ./README.md
+
+for folder in `ls -d1 */`
+do
+  folder_name=${folder::-1}
+  echo "# ${folder_name^}" >> ${folder}README.md
+done
