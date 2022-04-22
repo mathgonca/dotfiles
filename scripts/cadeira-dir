@@ -10,5 +10,14 @@ echo "# $cadeira_name" >> ./README.md
 for folder in `ls -d1 */`
 do
   folder_name=${folder::-1}
-  echo "# ${folder_name^}" >> ${folder}README.md
+
+  echo "# ${folder_name}" >> ./$folder/README.md
+
+  if [ "$folder_name" != "n2" ]; then
+    numero_atividade=${folder_name##*-}
+    atividade="atividade-$numero_atividade"
+
+    mkdir ./$folder/$atividade
+    echo "# ${atividade}" >> ./$folder/$atividade/README.md
+  fi
 done
